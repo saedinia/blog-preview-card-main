@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              "no-blur-lg": "10px 10px 0",
+              "no-blur-xl": "15px 15px 0",
+            },
+            colors: {
+              primary: "hsl(47, 88%, 63%)",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
+  <body class="figtree-sans">
+    <div class="bg-primary grid w-screen h-screen items-center">
+      <div
+        class="flex flex-col gap-4 bg-white p-6 mx-4 sm:w-[400px] sm:m-auto rounded-2xl shadow-no-blur-lg hover:shadow-no-blur-xl shadow-black transition-shadow transition-shadow duration-150 border border-black"
+      >
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt=""
+          class="w-full h-auto rounded-2xl block"
+        />
+        <div>
+          <span class="bg-primary font-bold px-2 py-1 rounded-md"
+            >Learning</span
+          >
+        </div>
+        <div>
+          <span class="font-bold">Published 21 Dec 2023</span>
+        </div>
+        <div class="text-2xl font-extrabold hover:text-primary cursor-pointer">
+          HTML & CSS foundations
+        </div>
+        <p class="text-gray-400 font-bold">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="flex gap-4 items-center">
+          <img
+            src="./assets/images/image-avatar.webp"
+            al="avatar"
+            class="w-12"
+          />
+          <span class="font-bold">Greg Hooper</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
